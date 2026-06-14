@@ -23,3 +23,18 @@ console.log(`ts true? : ${wahrheit}`);
 */
 
 // let username = window.prompt("Wie heißt du noch ma?");
+const button_Page1 = document.createElement('button');
+const button_Page2 = document.createElement('button');
+button_Page1.textContent = `Ja`
+button_Page2.textContent = `Ja`
+
+button_Page1.addEventListener('click', () => {
+    window.location.href = 'interactive.html';
+});
+
+button_Page2.addEventListener('click', () => {
+    window.location.href = 'interactive.html';
+});
+
+document.body.appendChild(button_Page1);
+document.body.appendChild(button_Page2);
